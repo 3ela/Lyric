@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-wrapper ">
+                <a href="#" class="brand-logo center">
+                 <ul id="nav-mobile" class="left ">
+                    <li><a href="#" data-target="sideNav" class="sidenav-trigger  .hide-on-med-and-up"><i class="material-icons">menu</i></a></li>
+            </div>
+        </nav>
+        <!-- The side fixed nav menu  -->
+        <div class="sidenav sidenav-fixed side-Nav" id="sideNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="waves-effect waves-light modal-trigger" href="#favourites" id="favouritesTrigger">Favs</a></li>
+            </ul>
+        </div>
+        <!-- the favourites Modal  -->
+        <div id="favourites" class="modal">
+            <ul class="modal-content">
+              <h4>My Favourites</h4>
+              <!-- the Favourited songs should be built Here -->
+                <ul id="favouritedSongs" class="collapsible">
+
+                </ul>
+            
+            <div class="modal-footer">
+              
+            </div>
+        </div>
+        
+    </header>     
+        
+
+    <main class="container" >
+        <!-- the search form -->
+        <div class="row ">
+            <div class="lyr-search-bar center-align">
+                <form id="searchFields">  
+                    <div class="input-field">
+                        <label for="artistInput">Artist Name*</label>
+                        <input type="text" id="artisitInput" name="artistName" required>       
+                    </div>
+                    <div class="input-field">    
+                        <label for="songInput">Song Name*</label>
+                        <input type="text" id="songInput" name="songName" required>     
+                    </div>
+                    <div class="input-field">
+                            <input type ="submit" class ="btn" value ="Submit"/>
+                    </div>
+                </form>
+            </div>  
+        </div>
+
+        <!--  where the lyrics wil be shown-->
+        <div class="container">
+            <div class="row">
+                <div id="lyrHeader">
+                    <div class="lyr-song-info">
+                        <!-- the artist name and song name-->
+
+                    </div>
+                    <div class="lyr-icons-bar">
+                        <!-- the fav icon -->
+                        <i class="material-icons" id="favouriteIcon"></i>
+                    </div>
+                    <div id="lyrState">
+                        <!-- will show any feedback for the user -->
+                    </div>
+                </div>
+                <div class="lyr-lyrics-text">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script src="js/searchlyrics.js"></script>
+    <script src="js/initialize.js"></script>
+</body>
+</html>

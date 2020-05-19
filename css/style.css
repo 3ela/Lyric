@@ -1,0 +1,104 @@
+:root{
+
+    --primary-color:#B4B9B7;
+    --secondary-color:#0C090D;
+    --accent:#E71D36;
+    --accent-2:#EF2D56;
+    --transparent:#00000000;
+}
+body{
+    background-color: #f5f5f5 ;
+}
+
+.side-Nav{
+    width:200px;
+    height: auto;
+    top: 200px;
+    left:20px;
+    background-color: var(--secondary-color);
+}
+
+
+.side-nav-trigger{
+    color:white ;
+    float :left;
+}
+.nav-bar{
+    width:60%;
+    margin:auto;
+    background-color: var(--secondary-color);
+}
+.material-icons{
+    color: var(--accent-2);
+}
+.btn{
+    background-color: var(--accent-2);
+}
+
+.lyr-search-bar , .lyr-site-description{
+    width:60%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.lyr-site-description{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.lyr-margin-top{
+    margin-top: 50px;
+}
+
+.lyr-titles{
+    border-bottom: solid 1px black;
+    width: 30%;
+}
+
+.lyr-titles h4{
+    padding-left: 15px;
+}
+.lyr-header{
+    background-color: var(--primary-color);
+    border:solid thin var(--secondary-color);
+    padding: 20px;
+}
+
+.lyr-song-info{
+    display: inline;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: bold;
+}
+
+.lyr-icons-bar{
+    display: inline;
+}
+
+.lyr-header i{
+    cursor: pointer;
+    float: right;
+    padding-right: 20px;
+}
+
+.lyr-lyrics-text{
+    margin:15px;
+    padding:50px 15px 15px 40px;
+    text-align: center;
+}
+
+.lyr-collapsible-icon {
+    right:20px;
+    position: absolute;
+}
+
+ /*  Animations  */
+@keyframes loading {
+    0% {
+        
+        width: 0px;
+    }
+    100% {
+        background-color: #b22cff;
+        width:100px;
+      }
+    }
